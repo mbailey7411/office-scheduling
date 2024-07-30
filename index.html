@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office Scheduling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Office Scheduling System</h1>
+    
+    <h2>Submit Your Availability</h2>
+    <form id="availabilityForm">
+        <label for="name">Name:</label>
+        <select id="name" required>
+            <option value="">Select your name</option>
+            <option value="Matt">Matt</option>
+            <option value="Tresa">Tresa</option>
+            <option value="Candace">Candace</option>
+            <option value="Maria">Maria</option>
+        </select>
+
+        <label for="days">Days Available:</label>
+        <input type="text" id="days" placeholder="e.g., Monday, Wednesday, Friday" required>
+
+        <button type="submit">Submit</button>
+    </form>
+    
+    <h2>Weekly Schedule</h2>
+    <div class="schedule" id="schedule">
+        <p>No schedule available yet.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
